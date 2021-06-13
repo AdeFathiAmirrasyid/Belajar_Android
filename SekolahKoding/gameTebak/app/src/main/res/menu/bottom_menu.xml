@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/aboutFragment"
+        android:icon="@drawable/facebook"
+        android:title="Tentang"/>
+    <item
+        android:id="@+id/introFragment"
+        android:icon="@drawable/whatsapp"
+        android:title="Intro"/>
+    <item
+        android:id="@+id/quizFragment"
+        android:icon="@drawable/skype"
+        android:title="Quiz"/>
+
+</menu>

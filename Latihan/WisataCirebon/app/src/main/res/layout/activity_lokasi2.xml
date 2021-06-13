@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/mapsfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </fragment>
+
+    <Button
+        android:id="@+id/normal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="NORMAL"
+        android:layout_width="100dp"
+        android:background="@color/write"
+        android:layout_height="50dp">
+    </Button>
+
+    <Button
+        android:id="@+id/satellite"
+        android:background="@color/write"
+        android:text="Satellite"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp">
+
+    </Button>
+
+</RelativeLayout>

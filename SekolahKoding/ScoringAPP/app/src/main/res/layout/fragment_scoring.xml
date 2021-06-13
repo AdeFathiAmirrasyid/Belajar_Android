@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="scoreViewModel"
+            type="com.insani.myapplication.score.ScoreViewModel" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".score.ScoringFragment">
+
+
+        <TextView
+            android:id="@+id/TextTim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Nama Team 1"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scoreNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@{@string/num_format(scoreViewModel.score1String)}"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="@+id/TextTim1"
+            app:layout_constraintStart_toStartOf="@+id/TextTim1"
+            app:layout_constraintTop_toBottomOf="@+id/TextTim1" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="VS"
+            android:textColor="@android:color/black"
+            android:textSize="56sp"
+            app:layout_constraintEnd_toEndOf="@+id/scoreNum1"
+            app:layout_constraintStart_toStartOf="@+id/scoreNum1"
+            app:layout_constraintTop_toBottomOf="@+id/scoreNum1" />
+
+        <TextView
+            android:id="@+id/scoreNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@{@string/num_format(scoreViewModel.score2String)}"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/TextTim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nama Team 2"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="@+id/scoreNum2"
+            app:layout_constraintStart_toStartOf="@+id/scoreNum2"
+            app:layout_constraintTop_toBottomOf="@+id/scoreNum2" />
+
+        <Button
+            android:id="@+id/buttonTim1"
+            android:onClick="@{()->scoreViewModel.updateScore(1)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="20dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="20dp"
+            android:text="TIM 1"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/TextTim2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextTim2" />
+
+        <Button
+            android:id="@+id/buttonTim2"
+            android:onClick="@{()->scoreViewModel.updateScore(2)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="150dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="20dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="20dp"
+            android:text="TIM 2"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TextTim2"
+            app:layout_constraintTop_toBottomOf="@+id/TextTim2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Wisata_Indonesia</string>
+    <string name="menggunakan_gridlayout">Menggunakan GridLayout?</string>
+    <string name="menggunakan_latin">Menggunakan Latin?</string>
+    <string name="ade_fathi_amirrasyid">Alisia</string>
+    <string name="description">description</string>
+    <string name="setting">Setting</string>
+    <string name="edit">Edit</string>
+    <string name="hapus">Hapus</string>
+</resources>
